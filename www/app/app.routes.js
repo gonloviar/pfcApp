@@ -9,5 +9,9 @@ angular.module('pfcApp')
 			url: '/home',
 			templateUrl: 'app/home/home.tpl.html',
 			controller: 'HomeCtrl as vm'
-		});
+		})
+		.state('login',{
+			templateUrl: 'app/login/login.tpl.html',
+			controller: 'LoginCtrl as vm'
+		})
 }]);

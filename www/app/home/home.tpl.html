@@ -1,27 +1,29 @@
-<ion-view view-title="home" style="background:black">
+<!-- tener en cuenta el caching de views q ofrece ionic -->
+<ion-view cache-view="false" view-title="home" style="background:black">
 
 
 
 
 <div class="row row-50 conte" style="height:50%">
 	<div class="col contenedor-home" style="background:red"
-		ng-click="vm.alerta('soy 1')">
-		{{vm.saludo}}
-		
+		ng-click="vm.openHePerdido()">		
 	</div>
 
 	<div class="col contenedor-home" style="background:#0099FF;"
 			ng-click="vm.alerta('soy 2')">
-		2
+		
+		Usuario: {{vm.user.name}}
+
 	</div>
 
 </div>
 
 
 <div class="row" style="height:50%">
-	<div class="col contenedor-home" style="background:yellow"
-			ng-click="vm.alerta('soy 3')">
-		3
+	<div class="col contenedor-home" style="background:yellow">
+
+	<button class="button button-block" ui-sref="login"> login page </button>
+
 	</div>
 
 	<div class="col contenedor-home" style="background:green"

@@ -1,10 +1,25 @@
 angular.module('pfcApp')
-	.controller('HomeCtrl', [function(){
+	.controller('HomeCtrl',
+				['$scope','$ionicModal', '$state','UserService',
+				function($scope, $ionicModal, $state, UserService){
+
 		var self= this;
 
-		self.saludo="hola";
+		self.user= UserService.getUser();
+		console.log(UserService.isLoggedin());
 
 		self.alerta= function(msg){
 			alert(msg);
 		};
+
+		self.openHePerdido= function(){
+			if( UserService.isLoggedin() ){
+				$state.go('hePerdido');
+			} else {
+				$state.go('login');
+			}
+		};
+
+
+		
 	}]);
