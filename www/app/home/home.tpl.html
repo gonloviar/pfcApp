@@ -1,36 +1,85 @@
 <!-- tener en cuenta el caching de views q ofrece ionic -->
 <ion-view cache-view="false" view-title="home" style="background:black">
 
+<ion-pane>
+    <ion-content scroll="false">
+ 
+		<section class = "home-container">
+ 
+			<div class = "row header">
+ 
+				<div class = "col text-center">
+              		[LOGO / HEADER] {{vm.user.name}}
+            	</div>
+            	<button class="button" ui-sref="login"> login page </button>
+ 
+          	</div>
+
+ 
+ 
+			<div class = "row icon-row">
+			 
+				<div class = "col text-center">
+			        <button class = "button button-block button-large button-positive"
+			        		ng-click="vm.openHePerdido()">
+			        	He encontrado
+			        </button>
+			    </div>
+			 
+			 
+				<div class = "col text-center">
+					<button class = "button button-positive button-block button-large ">
+						He encontrado
+					</button>
+					title
+				</div>
+			 
+			</div>
 
 
 
-<div class="row row-50 conte" style="height:50%">
-	<div class="col contenedor-home" style="background:red"
-		ng-click="vm.openHePerdido()">		
-	</div>
+			<div class = "row icon-row">
+			 
+				<div class = "col text-center">
+			        <button class = "button button-positive button-block button-large ">
+			        	Ver mascotas perdidas
+			        </button>
+			    </div>
+			 
+			 
+				<div class = "col text-center">
+					<button class = "button button-positive button-block button-large ">
+						Busca!!
+					</button>
+					Title
+				</div>
+			 
+			</div>
 
-	<div class="col contenedor-home" style="background:#0099FF;"
-			ng-click="vm.alerta('soy 2')">
-		
-		Usuario: {{vm.user.name}}
 
-	</div>
+			<div class = "row icon-row">
+			 
+				<div class = "col text-center">
+			        <button class = "button button-positive button-block button-large ">
+			        	Mi Activiad
+			        </button>
+			    </div>
+			 
+			 
+				<div class = "col text-center">
+					<button class = "button button-positive button-block button-large ">
+						Config
+					</button>
+				</div>
+			 
+			</div>
+ 
+        </section>
+ 
+      </ion-content>
+    </ion-pane>
+ 
+ 
 
-</div>
-
-
-<div class="row" style="height:50%">
-	<div class="col contenedor-home" style="background:yellow">
-
-	<button class="button button-block" ui-sref="login"> login page </button>
-
-	</div>
-
-	<div class="col contenedor-home" style="background:green"
-			ng-click="vm.alerta('soy 4')">
-		4
-	</div>
-
-</div>
 
 </ion-view>

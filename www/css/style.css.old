@@ -1,0 +1,28 @@
+/* Empty. Add your own CSS if you like */
+.contenedor-home{
+	border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius:60px; 
+    /*-webkit-align-items: center;*/
+/*
+    -moz-border-radius:60px;  Firefox  
+    -webkit-border-radius:60px;  Safari y Chrome  
+  */
+}
+
+
+.borde{
+	border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+
+.home-container{
+	height:100% !important;
+}
+
+/*.scroll {
+  height: 100% !important;
+}*/

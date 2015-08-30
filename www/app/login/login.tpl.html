@@ -1,15 +1,44 @@
-<ion-view>
+<ion-view title="Entra con tu cuenta">
 
 <ion-nav-bar class="bar-assertive" align-title="center">      
       <ion-nav-back-button class="button-clear">
          <i class="ion-arrow-left-c"></i>Inicio
-      </ion-nav-back-button>    
+      </ion-nav-back-button>   
+
+
  </ion-nav-bar>
 
-<ion-content>
+<ion-content scroll="false">
+
+
+	<div class="list list-inset">
+
+	  	<label class="item item-input item-floating-label">
+		    <span class="input-label" type="email">Email</span>
+		    <input type="text" placeholder="Email">
+	 	</label>
+
+		<label class="item item-input item-floating-label">
+			<span class="input-label">Contraseña</span>
+			<input type="text" placeholder="Contraseña">
+		</label>
+
+		<button class=" item button button-block" ng-click="vm.login()"> login </button>
+
+		<button class=" item button button-clear button-assertive button-block" 
+				ui-sref="regitro">
+				 Registrarse 
+		</button>
+
+
+
+	</div>
 	
-<button class="button button-full" ng-click="vm.login()"> login </button>
-<button class="button button-full" ng-click="vm.logout()"> logout </button>
+<button class="button button-block" ng-click="vm.logout()"> logout </button>
+<br>	<br>
+
+
+
 		
 
 </ion-content>

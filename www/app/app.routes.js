@@ -14,4 +14,12 @@ angular.module('pfcApp')
 			templateUrl: 'app/login/login.tpl.html',
 			controller: 'LoginCtrl as vm'
 		})
+		.state('hePerdido',{
+			templateUrl: 'app/secciones/hePerdido.tpl.html',
+			controller: 'HePerdidoCtrl as vm'
+		})
+		.state('registro', {
+			templateUrl: 'app/registro/registro.tpl.html',
+			controller: 'RegistroCtrl as vm'
+		})
 }]);
